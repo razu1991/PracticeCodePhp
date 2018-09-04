@@ -1,31 +1,9 @@
 <?php
-
-//example: left partial piramid
-for ($i = 1; $i <= 5; $i++) {
-    for ($j = 1; $j <= $i; $j++) {
-        echo "*";
-    }
-    echo "<br />";
+//adding number 1 to 100
+$result = 0;
+for ($i = 0; $i <= 100; $i++) {
+    $x = $result + $i;
+    echo $result . "+" . $i . "=" . $x . "<br>";
+    $result += $i;
 }
-
-
-//example: full piramid
-for ($i = 1; $i <= 5; $i++) {
-    for ($j = 5; $j > $i; $j--) {
-        echo "&nbsp;";
-    }
-    for ($j = $i; $j > 0; $j--) {
-        echo $j;
-    }
-    echo "<br>";
-}
-
-//example: right piramid
-for ($i = 1; $i <= 5; $i++) {
-    for ($j = 5; $j > $i; $j--) {
-        echo "*";
-    }
-   
-    echo "<br>";
-}
-?>
+echo "Total Result"." ".$result;
